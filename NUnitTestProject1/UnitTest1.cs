@@ -117,7 +117,7 @@ namespace NUnitTestProject1
         public void TestSqrt()
         {
             var x = 20;
-
+        
             var actual = mathfunctions.Sqrt(x);
             var expected = System.Math.Sqrt(x);
 
