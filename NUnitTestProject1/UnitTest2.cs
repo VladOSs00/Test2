@@ -6,6 +6,59 @@ namespace NUnitTestProject1
     class UnitTest2
     {
         [Test]
+
+        public void checkEqualMinus1()
+        {
+            var myfxncresult = functionlb2.function(-1);
+            var sysfxresult = functionlb2.functionSys(-1);
+
+            Assert.AreEqual(myfxncresult, sysfxresult, 0.1);
+        }
+
+        [Test]
+        public void checkEqualMinus2()
+        {
+            var myfxncresult = functionlb2.function(-2);
+            var sysfxresult = functionlb2.functionSys(-2);
+
+            Assert.AreEqual(myfxncresult, sysfxresult, 0.1);
+        }
+
+        [Test]
+        public void checkEqualMinus10()
+        {
+            var myfxncresult = functionlb2.function(-10);
+            var sysfxresult = functionlb2.functionSys(-10);
+
+            Assert.AreEqual(myfxncresult, sysfxresult, 0.1);
+        }
+
+        [Test]
+        public void checkEqualPlus1()
+        {
+            var myfxncresult = functionlb2.function(1);
+            var sysfxresult = functionlb2.functionSys(1);
+
+            Assert.AreEqual(myfxncresult, sysfxresult, 0.1);
+        }
+
+        [Test]
+        public void checkEqualPlus2()
+        {
+            var myfxncresult = functionlb2.function(2);
+            var sysfxresult = functionlb2.functionSys(2);
+
+            Assert.AreEqual(myfxncresult, sysfxresult, 0.1);
+        }
+
+        [Test]
+        public void checkEqualPlus10()
+        {
+            var myfxncresult = functionlb2.function(10);
+            var sysfxresult = functionlb2.functionSys(10);
+
+            Assert.AreEqual(myfxncresult, sysfxresult, 0.1);
+        }
         public void TestMinus1()
         {
             var actual = functionlb2.function(-1);
