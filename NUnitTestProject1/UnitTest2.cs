@@ -59,6 +59,25 @@ namespace NUnitTestProject1
 
             Assert.AreEqual(myfxncresult, sysfxresult, 0.1);
         }
+
+        [Test]
+        public void checkEqualPlus5()
+        {
+            var myfxncresult = functionlb2.function(5);
+            var sysfxresult = functionlb2.functionSys(5);
+
+            Assert.AreEqual(myfxncresult, sysfxresult, 0.1);
+        }
+
+        [Test]
+        public void checkEqualMinus5()
+        {
+            var myfxncresult = functionlb2.function(-5);
+            var sysfxresult = functionlb2.functionSys(-5);
+
+            Assert.AreEqual(myfxncresult, sysfxresult, 0.1);
+        }
+
         public void TestMinus1()
         {
             var actual = functionlb2.function(-1);
