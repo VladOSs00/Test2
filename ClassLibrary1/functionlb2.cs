@@ -18,5 +18,21 @@ namespace ClassLibrary1
                     (mathfunctions.Pow(mathfunctions.Ln(x), 3) / mathfunctions.Log(x, 3)) - (mathfunctions.Log(x, 2) + mathfunctions.Log(x, 5));
             }
         }
+
+        public static double functionSys(double x)
+        {
+            if (x <= 0)
+            {
+                return (Math.Pow(Math.Pow(Math.Cos(x), 3) + 1.0 / Math.Tan(x), 2) - 1.0 / Math.Sin(x)) - Math.Cos(x);
+            }
+
+            else
+            {
+                return (Math.Pow(Math.Log(x, 10) / Math.Log(x, 5), 3) + Math.Log(x, 2) + Math.Log(x, 5)) -
+                    (Math.Pow(Math.Log(x), 3) / Math.Log(x, 3)) - (Math.Log(x, 2) + Math.Log(x, 5));
+            }
+        }
+
+
     }
 }
